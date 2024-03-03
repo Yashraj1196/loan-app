@@ -1,0 +1,39 @@
+{
+    "users": [
+      {
+        "id": 1,
+        "name": "Ajay Chopra",
+        "email": "ajaychopra@gmail.com",
+        "password": "Ajay@123",  
+        "role": "user"
+      },
+      {
+        "id": 2,
+        "name": "Admin User",
+        "email": "admin@example.com",
+        "password": "Admin@123",  
+        "role": "admin"
+      }
+    ],
+    "loans": [
+      {
+        "id": 1,
+        "userId": 1,
+        "amount": 10000,
+        "term": 3,
+        "scheduledRepayments": [
+          { "id": 1, "date": "2023-02-14", "amount": 3333.33, "status": "PENDING" },
+          { "id": 2, "date": "2023-02-21", "amount": 3333.33, "status": "PENDING" },
+          { "id": 3, "date": "2023-02-28", "amount": 3333.34, "status": "PENDING" }
+        ],
+        "status": "PENDING"
+      }
+    ],
+    "repayments": [
+      { "id": 1, "loanId": 1, "term": 3, "amount": 3333.33, "status": "PENDING" },
+      { "id": 2, "loanId": 1, "term": 1, "amount": 3333.33, "status": "PAID" },
+      { "id": 3, "loanId": 1, "term": 2, "amount": 3333.33, "status": "PAID" },
+      { "id": 4, "loanId": 1, "term": 3, "amount": 3333.34, "status": "PENDING" }
+    ]
+  }
+  
